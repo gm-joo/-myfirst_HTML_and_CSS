@@ -1,0 +1,131 @@
+/*mooie border eventueel voor later
+.border {
+    margin: 1em 3em;
+	color: #999;
+	border-left: 2px solid #999;
+	padding-left: 1em;
+}
+*/
+body, html {
+    height: 100%;
+  }
+
+  * {
+    margin:5px 20px;
+    padding:10px;
+}
+body{ 
+    color:#999;
+    background-color:#fcfcfa;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1em;
+    text-align: center;
+}
+h1,h3{
+    line-height:2em;
+}
+h3{
+    text-align: center;
+}
+
+/* ronde afbeelding met gekleurde rand */
+.photo {
+	border: 1px solid #999;
+	padding: 5px;
+    border-radius: 50%;
+    margin:auto;
+}
+
+  /*styling voor links*/
+a:visited {
+    color:#999;
+    }
+
+a:hover {
+    color:black;
+    }
+a {
+    text-decoration:none;
+    color:black;
+}
+  /*styling voor de ordered list (1,2,3,) zodat deze centraal komt te staan, inclusief de nummers*/
+ol{
+    text-align: center;
+    list-style-position: inside;
+}
+  /*styling voor de border categorie*/
+.border {
+    border:2px #42ACFF solid;
+    border-radius: 15px;
+    line-height: 1.5em;
+    background-color: whitesmoke;
+    width:300px;
+    height:300px;
+    margin:auto;
+}
+  /*styling voor de unordered list met afbeeldingen (blauwe hartjes)*/
+.categories{
+    padding:5px;
+    padding-left:5px;
+    list-style-image:url('blue_heart.png');
+    text-align:left;
+}
+
+/* menu op elke pagina bovenaan zelfde opmaak */
+.menu ul{
+    padding:10px;
+    margin:auto;
+    list-style:none;
+    background-color:whitesmoke;
+    border:grey 3px solid;
+    border-radius:15px;
+    width:300px;
+}
+
+/* styling voor de quotes zelf en achtergrond */
+.quotes {
+    color:#999;
+    background-color:whitesmoke;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 2.5em;
+}
+/*styling voor img  */
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding:5px;
+    width: 85%;
+    border: 2px solid #42ACFF;
+    border-radius: 15px;
+  }
+
+/*media queries mobile first  */
+
+@media only screen and (max-width:640px) {
+body{
+    font-size: 20px;
+}}
+.border{
+    height:350px;
+}
+
+@media only screen and (min-width:640px){
+.img{
+    width: 65%;
+    }
+body{
+    font-size: 18px;
+    }
+}
+
+
+@media only screen and (min-width:1100px){
+    .img{
+        width: 50%;
+    }  
+}

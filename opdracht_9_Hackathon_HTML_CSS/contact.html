@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Contact </title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html">
+            <img src="Light_Blue_Circle.png" class="photo" alt="Logo" width="150">
+        </a>
+        <nav class="menu ul">
+            <ul>
+                <li><a href="index.html">Quote of the day</a></li>
+                <li><a href="more.html">More quotes</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h3>Do you have any questions or suggestions?</h3>
+        <p>We 💙 to get in touch with you.</p>
+        <form name="contact" method="POST" data-netlify="true">
+            <!-- <form action="results.html" method="GET" enctype="multipart/form-data"> -->
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required />
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required />
+            </div>
+            <div>
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone" />
+            </div>
+            <div> <label for="points">How do you feel today? 1=😢 6=😊</label>
+                <input type="range" name="feeling" min="0" max="10" step="1" list="feeling">
+                <datalist id="feeling">
+                    <option>0</option>
+                    <option>2</option>
+                    <option>4</option>
+                    <option>6</option>
+                    <option>8</option>
+                    <option>10</option>
+                </datalist>
+            </div>
+            <div>
+                <label for="question">Question</label>
+                <textarea id="question" name="question" cols="22" rows="5"></textarea>
+            </div>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+
+</html>
